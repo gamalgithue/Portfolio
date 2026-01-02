@@ -1,0 +1,27 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+    content: ["./**/*.{html,js}"],
+    theme: {
+        extend: {
+            fontFamily: {
+                sans: ['Inter', 'sans-serif'],
+                mono: ['"Fira Code"', 'monospace'],
+            },
+            colors: {
+                tech: {
+                    50: '#f0f9ff',
+                    100: '#e0f2fe',
+                    500: '#0ea5e9',
+                    600: '#0284c7',
+                    900: '#0c4a6e',
+                },
+                dark: {
+                    bg: '#0f172a',
+                    card: '#1e293b',
+                    text: '#f8fafc',
+                }
+            }
+        },
+    },
+    plugins: [],
+}

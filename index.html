@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamal Elbatawy | Full Stack .NET Engineer</title>
+    <meta name="description"
+        content="Portfolio of Gamal Elbatawy, a Full Stack .NET Engineer specialized in Blazor, ASP.NET Core, and Cloud Solutions.">
+    <link href="./dist/output.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-900 text-slate-50 font-sans antialiased selection:bg-sky-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <!-- Logo Removed -->
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about"
+                            class="hover:text-sky-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="#experience"
+                            class="hover:text-sky-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Experience</a>
+                        <a href="#projects"
+                            class="hover:text-sky-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Projects</a>
+                        <a href="#skills"
+                            class="hover:text-sky-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Skills</a>
+                        <a href="#contact"
+                            class="hover:text-sky-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <!-- Mobile menu button -->
+                    <button type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+            <!-- Background Elements -->
+            <div class="absolute inset-0 z-0">
+                <div class="absolute top-20 left-10 w-72 h-72 bg-sky-500/10 rounded-full blur-3xl animate-pulse"></div>
+                <div class="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse"
+                    style="animation-delay: 2s;"></div>
+            </div>
+
+            <div
+                class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center gap-12">
+                <!-- Text Content -->
+                <div class="flex-1 text-center lg:text-left space-y-8">
+                    <div class="space-y-4">
+                        <h2 class="text-sky-500 font-mono text-lg font-medium tracking-wide">Hello, I'm</h2>
+                        <h1 class="text-5xl lg:text-7xl font-bold tracking-tight text-white">
+                            Gamal <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-purple-500">Elbatawy</span>
+                        </h1>
+                        <h3 class="text-2xl lg:text-3xl text-slate-400 font-light">
+                            Full Stack .NET Engineer
+                        </h3>
+                    </div>
+
+                    <p class="text-slate-400 text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Building scalable enterprise solutions with <span class="text-sky-400 font-semibold">.NET
+                            Core</span>,
+                        <span class="text-sky-400 font-semibold">Blazor</span>, and modern web technologies.
+                        Passionate about clean architecture and cloud-native development.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#projects"
+                            class="w-full sm:w-auto px-8 py-3 bg-sky-600 hover:bg-sky-500 text-white font-semibold rounded-lg transition-all transform hover:-translate-y-1 shadow-lg shadow-sky-500/25 text-center">
+                            View Projects
+                        </a>
+                        <a href="./assets/Gamal_Elbatawy_CV.pdf" download
+                            class="inline-flex items-center px-8 py-4 border border-slate-700 text-base font-medium rounded-lg text-slate-300 hover:text-white hover:border-sky-500 md:text-lg transition-all bg-slate-900">
+                            <i class="fa-solid fa-download mr-3"></i>
+                            Download Resume
+                        </a> <!-- Social Links -->
+                        <div class="flex items-center gap-6 sm:ml-6 mt-4 sm:mt-0">
+                            <a href="https://github.com/gamalgithue" target="_blank"
+                                class="text-slate-400 hover:text-white transition-colors text-2xl" title="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/gamalelbatawy/" target="_blank"
+                                class="text-slate-400 hover:text-sky-400 transition-colors text-2xl" title="LinkedIn">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:gamalelbatawy21@gmail.com"
+                                class="text-slate-400 hover:text-sky-400 transition-colors text-2xl" title="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image/Visual -->
+                <div class="flex-1 flex justify-center lg:justify-end relative">
+                    <div class="relative w-72 h-72 lg:w-96 lg:h-96">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-tr from-sky-500 to-purple-500 rounded-full blur-2xl opacity-20 animate-pulse">
+                        </div>
+                        <img src="./assets/Gradudation_formal2.jpeg" alt="Gamal Elbatawy"
+                            class="relative w-full h-full object-cover object-top rounded-full border-4 border-slate-800 shadow-2xl transition-all duration-500 ease-in-out">
+
+                        <!-- Floating Badges -->
+                        <div class="absolute -top-4 -right-4 bg-slate-800 border border-slate-700 p-3 rounded-lg shadow-xl animate-bounce"
+                            style="animation-duration: 3s;">
+                            <i class="fa-brands fa-microsoft text-sky-400 text-2xl"></i>
+                        </div>
+                        <div class="absolute bottom-8 -left-8 bg-slate-800 border border-slate-700 p-3 rounded-lg shadow-xl animate-bounce"
+                            style="animation-duration: 4s;">
+                            <i class="fa-solid fa-code text-purple-400 text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <a href="#about" class="text-slate-500 hover:text-sky-400 transition-colors">
+                    <i class="fa-solid fa-chevron-down text-2xl"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-slate-900 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:text-center mb-16">
+                    <h2 class="text-base text-sky-500 font-semibold tracking-wide uppercase">About Me</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+                        A Passion for Clean Code & Architecture
+                    </p>
+                    <p class="mt-4 max-w-2xl text-xl text-slate-400 lg:mx-auto">
+                        Experienced in building end-to-end web solutions with a focus on performance and scalability.
+                    </p>
+                </div>
+
+                <div class="mt-10">
+                    <div class="bg-slate-800/50 rounded-2xl p-8 backdrop-blur-sm border border-slate-700">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                            <div class="space-y-6">
+                                <p class="text-slate-300 leading-relaxed">
+                                    I am a <span class="font-bold text-sky-400">Full Stack .NET Engineer</span> with a
+                                    Bachelor's in Computer Science from Kafrelsheikh University. My journey is defined
+                                    by a deep commitment to mastering the .NET ecosystem and modern web development
+                                    practices.
+                                </p>
+                                <p class="text-slate-300 leading-relaxed">
+                                    Currently, I work at <span class="text-white font-medium">MKH Solutions</span>,
+                                    where I develop complex multi-tenant applications using advanced patterns like <span
+                                        class="text-purple-400 font-mono text-sm">CQRS</span> and <span
+                                        class="text-purple-400 font-mono text-sm">DDD</span>. I have hands-on experience
+                                    with everything from <span class="text-sky-300">Blazor</span> on the frontend to
+                                    intricate <span class="text-sky-300">SQL Server</span> optimizations on the backend.
+                                </p>
+                                <div class="flex gap-4 pt-4">
+                                    <div class="text-center">
+                                        <h3 class="text-3xl font-bold text-white">4+</h3>
+                                        <p class="text-sm text-slate-500">Major Projects</p>
+                                    </div>
+                                    <div class="w-px bg-slate-700 mx-4"></div>
+                                    <div class="text-center">
+                                        <h3 class="text-3xl font-bold text-white">10+</h3>
+                                        <p class="text-sm text-slate-500">Technologies</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div
+                                    class="bg-slate-900 p-4 rounded-xl border border-slate-700 hover:border-sky-500/50 transition-colors">
+                                    <i class="fa-solid fa-server text-3xl text-sky-500 mb-2"></i>
+                                    <h4 class="text-white font-medium">Backend</h4>
+                                    <p class="text-sm text-slate-500 mt-1">ASP.NET Core, REST APIs, EF Core</p>
+                                </div>
+                                <div
+                                    class="bg-slate-900 p-4 rounded-xl border border-slate-700 hover:border-purple-500/50 transition-colors">
+                                    <i class="fa-solid fa-layer-group text-3xl text-purple-500 mb-2"></i>
+                                    <h4 class="text-white font-medium">Full Stack</h4>
+                                    <p class="text-sm text-slate-500 mt-1">Blazor, MVC, JavaScript</p>
+                                </div>
+                                <div
+                                    class="bg-slate-900 p-4 rounded-xl border border-slate-700 hover:border-emerald-500/50 transition-colors">
+                                    <i class="fa-solid fa-database text-3xl text-emerald-500 mb-2"></i>
+                                    <h4 class="text-white font-medium">Database</h4>
+                                    <p class="text-sm text-slate-500 mt-1">SQL Server, PostgreSQL</p>
+                                </div>
+                                <div
+                                    class="bg-slate-900 p-4 rounded-xl border border-slate-700 hover:border-orange-500/50 transition-colors">
+                                    <i class="fa-brands fa-docker text-3xl text-orange-500 mb-2"></i>
+                                    <h4 class="text-white font-medium">DevOps</h4>
+                                    <p class="text-sm text-slate-500 mt-1">Docker, Azure DevOps, CI/CD</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 bg-slate-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-base text-sky-500 font-semibold tracking-wide uppercase">My Journey</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+                        Professional Experience
+                    </p>
+                </div>
+
+                <div class="relative border-l border-slate-700 ml-4 md:ml-10 space-y-12">
+                    <!-- Job 1: MKH Solutions -->
+                    <div class="relative pl-8 md:pl-12">
+                        <div
+                            class="absolute -left-[9px] top-0 w-5 h-5 bg-sky-500 rounded-full border-4 border-slate-900 shadow-lg shadow-sky-500/50">
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">MKH Solutions</h3>
+                                <p class="text-sky-400 font-medium">Full Stack Developer .NET - Blazor</p>
+                            </div>
+                            <span class="text-slate-500 text-sm font-mono mt-2 md:mt-0">Aug 2025 – Present</span>
+                        </div>
+                        <ul
+                            class="list-disc list-outside ml-4 text-slate-400 space-y-2 leading-relaxed marker:text-sky-500">
+                            <li>Developing a <strong>Multi-Tenant Scheduling Application</strong> (TPSC) utilizing
+                                <strong>CQRS</strong> with MediatR and Domain-Driven Design (DDD).
+                            </li>
+                            <li>Building interactive UIs with <strong>Blazor</strong> and managing complex data with
+                                <strong>PostgreSQL</strong>.
+                            </li>
+                            <li>Ensuring code quality via <strong>Fluent Validation</strong> and <strong>xUnit</strong>
+                                testing.</li>
+                            <li>Managing CI/CD pipelines in <strong>Azure DevOps</strong> and containerizing services
+                                with <strong>Docker</strong>.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 2: Career 180 -->
+                    <div class="relative pl-8 md:pl-12">
+                        <div class="absolute -left-[5px] top-0 w-3 h-3 bg-slate-600 rounded-full"></div>
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Career 180 - Learn It</h3>
+                                <p class="text-slate-300 font-medium">Backend Intern</p>
+                            </div>
+                            <span class="text-slate-500 text-sm font-mono mt-2 md:mt-0">Sep 2024 – Dec 2024</span>
+                        </div>
+                        <ul
+                            class="list-disc list-outside ml-4 text-slate-400 space-y-2 leading-relaxed marker:text-slate-600">
+                            <li>Developed robust <strong>RESTful APIs</strong> with .NET Core, implementing CRUD and
+                                Swagger documentation.</li>
+                            <li>Optimized <strong>SQL Server</strong> performance and mastered Entity Framework Core
+                                migrations.</li>
+                            <li>Applied design patterns and maintained code versioning with Git.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 3: IT Share Solutions -->
+                    <div class="relative pl-8 md:pl-12">
+                        <div class="absolute -left-[5px] top-0 w-3 h-3 bg-slate-600 rounded-full"></div>
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">IT Share Solutions</h3>
+                                <p class="text-slate-300 font-medium">Full-Stack Intern</p>
+                            </div>
+                            <span class="text-slate-500 text-sm font-mono mt-2 md:mt-0">Aug 2023 – May 2024</span>
+                        </div>
+                        <ul
+                            class="list-disc list-outside ml-4 text-slate-400 space-y-2 leading-relaxed marker:text-slate-600">
+                            <li>Built MVC applications and REST APIs using <strong>ASP.NET Core</strong>.</li>
+                            <li>Implemented secure authentication/authorization and optimized database queries.</li>
+                            <li>Gained foundational experience in HTML, CSS, and JavaScript interactions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="py-20 bg-slate-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-base text-sky-500 font-semibold tracking-wide uppercase">My Arsenal</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+                        Technical Skills
+                    </p>
+                </div>
+
+                <div class="space-y-12">
+                    <!-- Languages -->
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-code text-sky-500"></i> Languages
+                        </h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="bg-slate-900 p-4 rounded-lg border border-slate-800 flex items-center gap-3">
+                                <i class="devicon-csharp-plain colored text-3xl text-purple-500"></i>
+                                <span class="text-slate-200 font-medium">C#</span>
+                            </div>
+                            <div class="bg-slate-900 p-4 rounded-lg border border-slate-800 flex items-center gap-3">
+                                <i class="devicon-cplusplus-plain colored text-3xl text-blue-500"></i>
+                                <span class="text-slate-200 font-medium">C++</span>
+                            </div>
+                            <div class="bg-slate-900 p-4 rounded-lg border border-slate-800 flex items-center gap-3">
+                                <i class="devicon-python-plain colored text-3xl text-yellow-400"></i>
+                                <span class="text-slate-200 font-medium">Python</span>
+                            </div>
+                            <div class="bg-slate-900 p-4 rounded-lg border border-slate-800 flex items-center gap-3">
+                                <i class="fa-brands fa-js text-3xl text-yellow-300"></i>
+                                <span class="text-slate-200 font-medium">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks & Technologies -->
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-microchip text-sky-500"></i> Frameworks & Tech
+                        </h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div
+                                class="bg-slate-900 p-4 rounded-lg border border-slate-800 hover:border-sky-500 transition-colors">
+                                <span class="block text-sky-400 font-bold mb-1">.NET Core</span>
+                                <span class="text-xs text-slate-500">Backend Powerhouse</span>
+                            </div>
+                            <div
+                                class="bg-slate-900 p-4 rounded-lg border border-slate-800 hover:border-purple-500 transition-colors">
+                                <span class="block text-purple-400 font-bold mb-1">Blazor</span>
+                                <span class="text-xs text-slate-500">Modern C# UI</span>
+                            </div>
+                            <div
+                                class="bg-slate-900 p-4 rounded-lg border border-slate-800 hover:border-blue-500 transition-colors">
+                                <span class="block text-blue-400 font-bold mb-1">ASP.NET MVC</span>
+                                <span class="text-xs text-slate-500">Web Apps</span>
+                            </div>
+                            <div
+                                class="bg-slate-900 p-4 rounded-lg border border-slate-800 hover:border-red-500 transition-colors">
+                                <span class="block text-red-400 font-bold mb-1">ABP Framework</span>
+                                <span class="text-xs text-slate-500">Enterprise Solutions</span>
+                            </div>
+                            <div
+                                class="bg-slate-900 p-4 rounded-lg border border-slate-800 hover:border-green-500 transition-colors">
+                                <span class="block text-green-400 font-bold mb-1">EF Core</span>
+                                <span class="text-xs text-slate-500">ORM</span>
+                            </div>
+                            <div
+                                class="bg-slate-900 p-4 rounded-lg border border-slate-800 hover:border-indigo-500 transition-colors">
+                                <span class="block text-indigo-400 font-bold mb-1">SignalR</span>
+                                <span class="text-xs text-slate-500">Real-time</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Platforms -->
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-wrench text-sky-500"></i> Tools & Platforms
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="px-4 py-2 bg-slate-900 rounded-full border border-slate-800 text-slate-300 text-sm"><i
+                                    class="fa-brands fa-docker text-blue-400 mr-2"></i>Docker</span>
+                            <span
+                                class="px-4 py-2 bg-slate-900 rounded-full border border-slate-800 text-slate-300 text-sm"><i
+                                    class="fa-solid fa-database text-yellow-400 mr-2"></i>SQL Server</span>
+                            <span
+                                class="px-4 py-2 bg-slate-900 rounded-full border border-slate-800 text-slate-300 text-sm"><i
+                                    class="fa-solid fa-database text-blue-300 mr-2"></i>PostgreSQL</span>
+                            <span
+                                class="px-4 py-2 bg-slate-900 rounded-full border border-slate-800 text-slate-300 text-sm"><i
+                                    class="fa-brands fa-microsoft text-blue-500 mr-2"></i>Azure DevOps</span>
+                            <span
+                                class="px-4 py-2 bg-slate-900 rounded-full border border-slate-800 text-slate-300 text-sm"><i
+                                    class="fa-brands fa-git-alt text-red-500 mr-2"></i>Git</span>
+                            <span
+                                class="px-4 py-2 bg-slate-900 rounded-full border border-slate-800 text-slate-300 text-sm"><i
+                                    class="fa-solid fa-terminal text-slate-400 mr-2"></i>Postman</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-slate-900 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:text-center mb-16">
+                    <h2 class="text-base text-sky-500 font-semibold tracking-wide uppercase">My Work</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+                        Featured Projects
+                    </p>
+                    <p class="mt-4 max-w-2xl text-xl text-slate-400 lg:mx-auto">
+                        A selection of technical projects focusing on complex back-end logic and high-performance
+                        systems.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1: AOUN (Graduation Project) -->
+                    <div
+                        class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:border-sky-500 transition-all duration-300 group hover:-translate-y-2 hover:shadow-2xl hover:shadow-sky-500/10 flex flex-col">
+                        <div class="p-6 flex-1">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="text-xl font-bold text-white group-hover:text-sky-400 transition-colors">AOUN
+                                    Transport System</h3>
+                                <span
+                                    class="bg-sky-500/10 text-sky-400 text-xs font-semibold px-2 py-1 rounded">Graduation
+                                    Project</span>
+                            </div>
+                            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                                End-to-end transportation system featuring trip booking, secure payments
+                                (Stripe/Paymob), and an AI-driven recommendation engine.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-slate-300">.NET Core</span>
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-slate-300">Web API</span>
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-slate-300">Stripe</span>
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-slate-300">AI Logic</span>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 mt-auto">
+                            <a href="https://github.com/KarimmAyman/StudentPathProject" target="_blank"
+                                class="inline-flex items-center text-sky-400 hover:text-sky-300 font-medium text-sm">
+                                View Code <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: E-Commerce BookStore -->
+                    <div
+                        class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:border-purple-500 transition-all duration-300 group hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/10 flex flex-col">
+                        <div class="p-6 flex-1">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">
+                                    E-Commerce BookStore</h3>
+                                <span
+                                    class="bg-purple-500/10 text-purple-400 text-xs font-semibold px-2 py-1 rounded">Web
+                                    App</span>
+                            </div>
+                            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                                Complete e-commerce solution with multi-role access (Admin, Customer), order management,
+                                Email notifications (SendGrid), and Stripe payments.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-slate-300">ASP.NET MVC</span>
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-slate-300">SQL Server</span>
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-slate-300">SendGrid</span>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 mt-auto">
+                            <a href="https://github.com/gamalgithue/BookStore" target="_blank"
+                                class="inline-flex items-center text-purple-400 hover:text-purple-300 font-medium text-sm">
+                                View Code <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: MedConnect API -->
+                    <div
+                        class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:border-emerald-500 transition-all duration-300 group hover:-translate-y-2 hover:shadow-2xl hover:shadow-emerald-500/10 flex flex-col">
+                        <div class="p-6 flex-1">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">
+                                    MedConnect API</h3>
+                                <span
+                                    class="bg-emerald-500/10 text-emerald-400 text-xs font-semibold px-2 py-1 rounded">API
+                                    System</span>
+                            </div>
+                            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                                Secure healthcare appointment management API with JWT authentication, role-based access,
+                                and comprehensive Swagger documentation.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-slate-300">REST API</span>
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-slate-300">JWT Auth</span>
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-slate-300">Swagger</span>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 mt-auto">
+                            <a href="https://github.com/Y-Baker/MedConnect-API" target="_blank"
+                                class="inline-flex items-center text-emerald-400 hover:text-emerald-300 font-medium text-sm">
+                                View Code <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Admin Dashboard -->
+                    <div
+                        class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 hover:border-blue-500 transition-all duration-300 group hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col">
+                        <div class="p-6 flex-1">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                                    Admin Dashboard System</h3>
+                                <span class="bg-blue-500/10 text-blue-400 text-xs font-semibold px-2 py-1 rounded">Web
+                                    App</span>
+                            </div>
+                            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                                comprehensive dashboard offering server-side DataTables with export (PDF/Excel),
+                                multi-language support, and secure role-based auth via 3-tier architecture.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-slate-300">ASP.NET MVC</span>
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-slate-300">SQL Server</span>
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-slate-300">3-Tier Arch</span>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 mt-auto">
+                            <a href="https://github.com/gamalgithue/MVC_SimpleProject" target="_blank"
+                                class="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium text-sm">
+                                View Code <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-slate-950 relative overflow-hidden">
+            <div
+                class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent">
+            </div>
+
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl mb-8">
+                    Ready to engineer something great?
+                </h2>
+                <p class="text-xl text-slate-400 mb-12">
+                    I'm currently available for new opportunities. Whether you have a question or just want to say hi,
+                    my inbox is always open.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                    <a href="mailto:gamalelbatawy21@gmail.com"
+                        class="inline-flex items-center px-8 py-4 border border-transparent text-base font-medium rounded-lg text-white bg-sky-600 hover:bg-sky-500 md:text-lg transition-all shadow-lg hover:shadow-sky-500/30">
+                        <i class="fa-solid fa-paper-plane mr-3"></i>
+                        Send me an email
+                    </a>
+                    <a href="./assets/Gamal_Elbatawy_CV.pdf" download
+                        class="inline-flex items-center px-8 py-4 border border-slate-700 text-base font-medium rounded-lg text-slate-300 hover:text-white hover:border-sky-500 md:text-lg transition-all bg-slate-900">
+                        <i class="fa-solid fa-download mr-3"></i>
+                        Download Resume
+                    </a>
+                </div>
+
+                <div class="mt-16 flex justify-center space-x-8">
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center mb-3 text-sky-500">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <span class="text-slate-400 text-sm">Giza, Egypt</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center mb-3 text-green-500">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <span class="text-slate-400 text-sm">+20 1067611723</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-slate-950 border-t border-slate-800 py-8">
+            <div class="max-w-7xl mx-auto px-4 text-center text-slate-500 text-sm">
+                <p>&copy; 2025 Gamal Elbatawy. Built with .NET precision.</p>
+            </div>
+        </footer>
+
+</body>
+
+</html>

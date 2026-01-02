@@ -1,0 +1,317 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+ 
+% License : MIT
+%------------------------
+ 
+\documentclass[letterpaper,11pt]{article}
+ 
+\usepackage{latexsym}
+\usepackage{color}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+ 
+ 
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+ 
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+ 
+ 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+ 
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+ 
+\urlstyle{same}
+ 
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+ 
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+ 
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+ 
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+ 
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+ 
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+ 
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+ 
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+ 
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+ 
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+ 
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+ 
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ 
+\begin{document}
+ 
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://s...content-available-to-author-only...j.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://s...content-available-to-author-only...j.com/}{http://w...content-available-to-author-only...j.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+ 
+\begin{center}
+    {\Huge\textbf{Gamal Moemen Elbatawy}} \\[4pt]
+    {\large .NET Developer} \\[6pt]
+    
+    \small
+    \raisebox{-0.1\height}{\faHome}~Giza, Egypt \quad
+    \raisebox{-0.1\height}{\faPhone}~+20 1067611723 \quad
+    \raisebox{-0.2\height}{\faEnvelope}~\href{mailto:gamalelbatawy21@gmail.com}{\underline{gamalelbatawy21@gmail.com}} \quad
+    \raisebox{-0.2\height}{\faLinkedin}~\href{https://www.linkedin.com/in/gamalelbatawy/}{\underline{gamalelbatawy}} \quad
+    \raisebox{-0.2\height}{\faGithub}~\href{https://github.com/gamalgithue}{\underline{GamalElbatawy}}
+\end{center}
+ 
+ %-----------EDUCATION-----------
+\section{{Education}}
+  \resumeSubHeadingListStart
+  \vspace{2pt}
+  \resumeSubheading
+      {Kafrelsheikh University}{Sep. 2021 -- June. 2025}
+      {Faculty of Computers and Information  ( Computer Science).}{GPA: 3.3 / 4}
+ 
+  \resumeSubHeadingListEnd
+  \vspace{-20pt}
+ 
+%-----------Experience-----------
+\section{{Experience}}
+    \vspace{-8pt}
+     \resumeProjectHeading
+          {\textbf{\textbullet\ Career 180 - Learn It }$|$ \emph{Backend Intern} \hspace{75pt} }{September 2024 - December 2024}
+          \vspace{-10pt}
+        \resumeItemListStart
+ 
+ 
+            \resumeItem{Developed robust \textbf{RESTful APIs using .NET Core}, implementing CRUD operations, authentication, and API documentation with Swagger while following clean code principles.}
+ \vspace{-5pt}
+          \resumeItem{Mastered database operations through \textbf{Entity Framework Core}, including code-first migrations, complex \textbf{LINQ} queries, and optimizing \textbf{SQL Server} performance for efficient data management.}
+          \vspace{-5pt}
+          \resumeItem{Applied software design patterns, error handling, logging, and Git version control.}
+ 
+           \vspace{-2pt}
+ 
+ 
+   \resumeItemListEnd 
+  
+   \vspace{-10pt}
+     \resumeProjectHeading
+          {\textbf{\textbullet\ IT Share Solutions}$|$ \emph{Full-Stack Intern } \hspace{75pt} }{August 2023 - May 2024}
+          \vspace{-10pt}
+        \resumeItemListStart
+          \resumeItem{Developed and integrated \textbf{RESTful APIs and  MVC using ASP.NET Core.}}
+          \vspace{-5pt}
+          \resumeItem{Managed SQL databases, optimizing queries and implementing CRUD operations, as well as working with Entity Framework for seamless database interaction.}
+          \vspace{-5pt}
+            \resumeItem{
+ Secured applications through authentication and authorization mechanisms.}
+ \vspace{-5pt}
+          \resumeItem{Handled error logging and improved backend performance.}
+           \vspace{-5pt}
+ 
+       \resumeItem{ Gained exposure to basic front-end technologies \textbf{(HTML, CSS, JavaScript). }}
+ 
+   \resumeItemListEnd 
+  
+   \vspace{-20pt}
+           \resumeProjectHeading
+           \resumeProjectHeading
+ 
+          {\textbf{\textbullet\ Participation in the Egyptian Programming Competition (ECPC) 2022 }}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    \vspace{1pt}
+ 
+              \vspace{-5pt}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+% \vspace{-10pt}
+ 
+ 
+%
+ 
+%-----------Projects-----------
+\section{{Projects}}
+ \vspace{-5pt}
+\resumeProjectHeading
+{\textbf{\textbullet\ AOUN - Graduation Project: Transportation System}$|$ \emph{C\# - Web API} \hspace{75pt}{\href{https://github.com/KarimmAyman/StudentPathProject}{\underline{GitHub Repo.}} }}{June 2025}
+\vspace{-10pt}
+\resumeItemListStart
+  \resumeItem{Responsible for designing and developing the end-to-end user journey, including trip searching, listing, booking, and secure payment processing through \textbf{Stripe (Credit Card)} and \textbf{Paymob (Wallet)}.}
+    \vspace{-5pt}
+    
+  \resumeItem{Built and secured \textbf{RESTful APIs} to manage user functionalities such as trip search, display, booking, and payment workflows.}
+    \vspace{-5pt}
+    
+  \resumeItem{Seamlessly integrated \textbf{Stripe} and \textbf{Paymob} payment gateways with webhook-based confirmation mechanisms to guarantee secure and dependable transactions.}
+    \vspace{-5pt}
+    
+  \resumeItem{Developed an \textbf{AI-driven Recommendation System} to deliver personalized trip suggestions, optimizing the user’s search and booking experience.}
+    \vspace{-5pt}
+    
+  \resumeItem{Integrated an \textbf{AI-powered Face Verification model} to enhance and secure user identity validation during registration, and to automate driver verification and acceptance filtering processes.}
+\vspace{-15pt}
+\resumeItemListEnd
+
+
+    \resumeProjectHeading
+          {\textbf{\textbullet\ E-Commerce BookStore}$|$ \emph{C\# - Web Application} \hspace{75pt}{\href{https://github.com/gamalgithue/BookStore}{\underline{GitHub Repo.}} }}{january 2025}
+          \vspace{-10pt}
+        \resumeItemListStart
+          \resumeItem{Developed a e-commerce web application for books using \textbf{ASP.NET Core, Microsoft SQL Server}, and integrated secure payments via \textbf{Stripe}}
+                     \vspace{-5pt}
+ 
+          \resumeItem{Implemented multi-role access control (Admin, Customer, Company, Employee) with features like order management, email notifications using SendGrid, and external authentication (Facebook).}
+                     \vspace{-5pt}
+ 
+          \resumeItem{Enhanced system scalability, security, and user experience.}
+   \vspace{-15pt}
+
+          \resumeItemListEnd 
+
+  \resumeProjectHeading
+          {\textbf{\textbullet\ MedConnect API}$|$ \emph{C\# - Web Application} \hspace{75pt}{\href{https://github.com/Y-Baker/MedConnect-API}{\underline{GitHub Repo.}} }}
+          {December 2024}
+          \vspace{-10pt}
+        \resumeItemListStart
+        
+        \resumeItem{Developed the System using \textbf{ASP.NET Core Web API}
+        and \textbf{SQL Server}, ensuring high performance and data integrity.}
+        
+            \vspace{-5pt}
+          \resumeItem{Designed and implemented a secure \textbf{RESTful API with JWT authentication} for managing healthcare appointments.}
+              \vspace{-5pt}
+ 
+          \resumeItem{Created patient features, including profile management, appointment scheduling, and medical history updates.}
+                     \vspace{-5pt}
+ 
+          \resumeItem{Built provider tools for schedule management, secure access to patient records, and communication via notifications.}
+            \vspace{-5pt}
+ 
+          \resumeItem{Documented the API with \textbf{Swagger} and ensured data protection with encryption and role-based access control.}
+                    
+  \vspace{-10pt}
+ 
+ 
+          \resumeItemListEnd 
+    \vspace{-5pt}
+    
+
+ 
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+%-----------PROGRAMMING SKILLS-----------
+  \vspace{5pt}
+
+\section{{Technical Skills}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+%     \vspace{10pt}
+     \textbf{Languages }{: C\# ,  C++ , python  .} \\
+     \vspace{2pt}
+     \textbf{Developer Tools }{: Visual Studio, Microsoft SQL Server, Pycharm, VS Code ,Postman , Git \& GitHub.} \\
+     \vspace{2pt}
+     \textbf{Basics of Programming }{: OOP, Data structure, Algorithms, Database, Design patterns, Solid Principle.} \\
+     \vspace{2pt}
+     \textbf{Technology  }{: C\#, .NET, MVC, RESTful API , LINQ, Entity Framework Core, HTML, CSS, JavaScript , Jquery, Ajax} \\
+    }}
+    \vspace{0pt}
+ \end{itemize}
+ \vspace{-16pt}
+ 
+ 
+ 
+ 
+ 
+\end{document}
